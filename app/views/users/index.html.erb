@@ -1,0 +1,10 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <%= render @users %> #railsは@usersをUserオブジェクトのリストであると推測し、自動的にユーザーを列挙しパーシャルのて出力する
+</ul>
+
+<%= will_paginate %>
